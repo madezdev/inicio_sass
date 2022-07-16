@@ -1,0 +1,46 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1REM = 10px */
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 140rem;
+  margin: auto;
+  overflow: hidden;
+  padding: 6rem 0;
+}
+
+.menu-navegacion {
+  background-color: #5d8a9f;
+  height: 7rem;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 7rem;
+  width: 100%;
+  display: block;
+}
+
+.enlaces li {
+  display: inline-block;
+  list-style: none;
+}
+.enlaces a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=styles.css.map */

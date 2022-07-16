@@ -1,0 +1,35 @@
+// Menu de navegación 
+
+@use 'variables';
+
+
+
+    .menu-navegacion{
+        background-color: variables.$colorFondo ;
+        height: 7rem;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo {
+        img{
+            height: 7rem;
+            width: 100%;
+            display: block;
+        }
+    }
+
+    .enlaces{
+        li{
+            display: inline-block;
+            list-style: none;
+        }
+
+        a{
+            color: #fff;
+            text-decoration: none;
+
+        }
+    }
+
