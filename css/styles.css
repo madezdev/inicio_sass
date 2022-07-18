@@ -21,10 +21,10 @@ body {
 }
 
 .menu-navegacion {
-  background-color: #5d8a9f;
   height: 7rem;
   padding: 0;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -39,7 +39,7 @@ body {
   list-style: none;
 }
 .enlaces a {
-  color: #fff;
+  color: #5d8a9f;
   text-decoration: none;
 }
 

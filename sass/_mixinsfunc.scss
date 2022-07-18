@@ -1,0 +1,17 @@
+@use 'sass:math';
+
+
+@mixin flex_center ($justify) {
+    display: flex;
+    align-items: center;
+    justify-content: $justify;
+}
+
+
+@function pixel-rem ($pixel){
+    //1 rem=16px
+     $rem: math.div($pixel, 16)*1rem;
+
+    @return $rem;
+
+}
