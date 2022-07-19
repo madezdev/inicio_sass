@@ -1,0 +1,33 @@
+@use 'variables';
+
+@media screen and (max-width: 800px) {
+  .menu-navegacion {
+    flex-direction: column;
+    height: 12rem;
+    justify-content: space-evenly;
+  }
+
+  .hero {
+    h1 {
+      font-size: 3.8rem;
+    }
+  }
+
+  .beneficio{
+    margin-bottom: variables.$marginElementos ;
+  }
+
+  .contenedor-imagenes{
+    img{
+        width: 90%;
+    }
+  }
+  .redes-sociales{
+    flex-direction: column;
+
+    i{
+        margin: 1rem;
+    }
+  }
+
+}

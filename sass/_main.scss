@@ -1,0 +1,73 @@
+@use "variables";
+@use "mixinsfunc";
+
+
+.titulo-seccion{
+    text-align: center;
+    font-size: 3.5rem;
+    color: variables.$colorFondo;
+}
+
+.copy{
+    text-align: center;
+    color: variables.$colorDeTextos;
+    margin: 2rem 0;
+} 
+
+.beneficios{
+    padding-top: variables.$marginElementos;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.beneficio{
+    font-size: 2rem;
+    width: 10em;
+    height: 10em;
+    background-image: url("../img/imagen-flexbox-min.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    color: variables.$colorNeutral;
+    @include mixinsfunc.flex_center_row(center); 
+}
+
+.projects{
+    background: #f2f2f2f2;
+}
+
+.contenedor-imagenes{
+    
+    @include mixinsfunc.flex_center_row(space-evenly);
+    flex-wrap:wrap;
+
+    img{
+        display: block;
+        object-fit: cover;
+        width: 30%;
+        height: 22rem;
+        box-shadow: 0 0 0.4rem rgba($color: #000000, $alpha: .5);
+        margin-bottom: variables.$marginElementos ;
+    }
+}
+
+.people{
+   width: 15rem;
+   height: 15rem;
+   display: block;
+   margin: auto;
+   border-radius: 50%; 
+   object-fit: cover;
+}
+
+.person{
+    font-size: 2.2rem;
+    text-align: center;
+    font-weight: 300;
+    
+}
+
+
+
+

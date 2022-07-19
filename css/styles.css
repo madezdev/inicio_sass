@@ -10,6 +10,7 @@ html {
 body {
   font-family: "Raleway", sans-serif;
   font-size: 1.6rem;
+  margin: 0;
 }
 
 .contenedor {
@@ -37,10 +38,166 @@ body {
 .enlaces li {
   display: inline-block;
   list-style: none;
+  margin: 1rem;
 }
 .enlaces a {
   color: #5d8a9f;
   text-decoration: none;
+}
+.enlaces a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  height: 50rem;
+  background-image: url("../img/imagen-flexbox-min.png");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.hero h1 {
+  font-size: 6rem;
+  font-weight: 700;
+}
+.hero p {
+  font-weight: 300;
+  font-size: 2.5rem;
+  margin: 1.5rem 0;
+}
+
+.contenedor-textos {
+  padding: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: #ffffff;
+  text-align: center;
+}
+
+.boton {
+  width: 15rem;
+  display: block;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  background-color: #f69229;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 1rem;
+}
+
+.titulo-seccion {
+  text-align: center;
+  font-size: 3.5rem;
+  color: #5d8a9f;
+}
+
+.copy {
+  text-align: center;
+  color: #7e7e7e;
+  margin: 2rem 0;
+}
+
+.beneficios {
+  padding-top: 4rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.beneficio {
+  font-size: 2rem;
+  width: 10em;
+  height: 10em;
+  background-image: url("../img/imagen-flexbox-min.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects {
+  background: rgba(242, 242, 242, 0.9490196078);
+}
+
+.contenedor-imagenes {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.contenedor-imagenes img {
+  display: block;
+  object-fit: cover;
+  width: 30%;
+  height: 22rem;
+  box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.5);
+  margin-bottom: 4rem;
+}
+
+.people {
+  width: 15rem;
+  height: 15rem;
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.person {
+  font-size: 2.2rem;
+  text-align: center;
+  font-weight: 300;
+}
+
+footer {
+  background-image: url(../img/imagen-flexbox-min.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+footer .titulo-seccion, footer .copy {
+  color: #ffffff;
+}
+
+.redes-sociales {
+  padding-top: 4rem;
+  width: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.redes-sociales i {
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 800px) {
+  .menu-navegacion {
+    flex-direction: column;
+    height: 12rem;
+    justify-content: space-evenly;
+  }
+  .hero h1 {
+    font-size: 3.8rem;
+  }
+  .beneficio {
+    margin-bottom: 4rem;
+  }
+  .contenedor-imagenes img {
+    width: 90%;
+  }
+  .redes-sociales {
+    flex-direction: column;
+  }
+  .redes-sociales i {
+    margin: 1rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

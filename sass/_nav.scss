@@ -6,7 +6,7 @@
 .menu-navegacion {
   height: 7rem;
   padding: 0;
-  @include mixinsfunc.flex_center(space-between);
+  @include mixinsfunc.flex_center_row(space-between);
 }
 
 .logo {
@@ -21,10 +21,15 @@
   li {
     display: inline-block;
     list-style: none;
+    margin:1rem;
   }
 
   a {
     color: variables.$colorFondo;
     text-decoration: none;
+  }
+
+  a:hover{
+    text-decoration: underline;
   }
 }

@@ -1,10 +1,24 @@
 @use 'sass:math';
 
 
-@mixin flex_center ($justify) {
+@mixin flex_center_row ($justify) {
     display: flex;
     align-items: center;
     justify-content: $justify;
+}
+
+@mixin flex_center_column ($justify) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: $justify;
+}
+
+@mixin img {
+    background-image: url(../img/imagen-flexbox-min.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
 }
 
 

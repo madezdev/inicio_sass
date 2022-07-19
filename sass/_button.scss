@@ -1,0 +1,14 @@
+@use "variables";
+
+
+.boton{
+    width: 15rem;
+    display: block;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+    background-color: variables.$colorBotones;
+    color: variables.$colorNeutral;
+    text-decoration: none;
+    border-radius: 1rem;
+}
+

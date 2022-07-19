@@ -1,0 +1,30 @@
+@use "variables";
+@use "mixinsfunc";
+
+
+
+footer{
+    
+   @include mixinsfunc.img;
+   
+
+   .titulo-seccion, .copy{
+    color: variables.$colorNeutral;
+   }
+
+}
+
+.redes-sociales{
+    padding-top: variables.$marginElementos;
+    width: 50%;
+    margin: auto;
+    @include mixinsfunc.flex_center_row (space-evenly);
+
+    i{
+        font-size: 3rem;
+        color: variables.$colorNeutral;
+    }
+}
+
+
+
